@@ -10,12 +10,12 @@ const Cliente = ({ cliente }) => {
    const navigate = useNavigate();
    const { nombre, empresa, id, telefono, email } = cliente;
    return (
-      <tr className='border-b'>
-         <td className='p-6 space-y-2'>
+      <tr className='border-b '>
+         <td className=' text-center'>
             <p className='text-2xl text-gray-800'>{nombre}</p>
             <p className='text-gray-600'>{empresa}</p>
          </td>
-         <td className='p-6'>
+         <td className=' text-center'>
             <p className=' text-gray-600'>
                <span className='text-gray-800 uppercase font-bold'>
                   Email:{' '}
@@ -29,9 +29,9 @@ const Cliente = ({ cliente }) => {
                {telefono}
             </p>
          </td>
-         <td className='p-6 flex gap-3'>
+         <td className='p-8 text-center gap-3'>
             <button
-               className='text-blue-600 hover:text-blue-700 uppercase font-bold text-xs'
+               className='text-blue-600 hover:text-blue-700 uppercase font-bold text-xl'
                onClick={() => navigate(`/clientes/${id}/editar`)}>
                Editar
             </button>
@@ -45,7 +45,7 @@ const Cliente = ({ cliente }) => {
                }}>
                <button
                   type='submit'
-                  className='text-red-600 hover:text-red-700 uppercase font-bold text-xs'>
+                  className='text-red-600 hover:text-red-700 uppercase font-bold text-xl'>
                   Eliminar
                </button>
             </Form>
