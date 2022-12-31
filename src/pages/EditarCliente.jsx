@@ -70,7 +70,7 @@ const EditarCliente = () => {
                <input
                   type='submit'
                   className='bg-blue-800 w-full mt-5 p-3 font-bold text-white uppercase hover:bg-blue-900'
-                  value='Registrar Cliente'
+                  value='Guardar Cambios'
                />
             </Form>
          </div>
